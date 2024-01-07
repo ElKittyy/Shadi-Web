@@ -6,27 +6,65 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap.css">
     <script src="bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <script src="jquery.js"></script>
     <title>Shadi Indumentaria</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="titulo">Shadi Indumentaria</h1>
+        <div class="div_titulo">
+            Shadi
         </div>
         <navbar class="navegador">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Prendas superiores</a></li>
-                <li><a href="">Prendas inferiores</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="index.html"><button>Inicio</button></a></li>
+                <li><a href=""><button>Prendas superiores</button></a></li>
+                <li><a href=""><button>Prendas inferiores</button></a></li>
+                <li><a href=""><button>Contacto</button></a></li>
+                <li><a href=""><button>Sobre nosotros</button></a></li>
             </ul>
         </navbar>
     </header>
     <div class="main">
-        
+        <div class="slider">
+            <div class="slider_int">
+                <img src="./img/top negro.jpg" alt="">
+                <img src="./img/Sueter verder.jpg" alt="">
+                <img src="./img/pantalon.jpg" alt="">
+                <img src="./img/fiamma vestido top rosa.jpg" alt="">
+                <img src="./img/Fiamma vestido rosa 1.jpg" alt="">
+                <img src="./img/conjunto blanco.jpg" alt="">
+                <img src="./img/camisa rosa.jpg" alt="">
+                <img src="./img/blazzer negro.jpg" alt="">
+            </div>
+        </div>
     </div>
+    
+    <footer>
+        
+    </footer>
+    <script>
+        AOS.init();
+
+        var swiper = new Swiper('.slider2', {
+            slidesPerView: 4, // Número de tarjetas visibles en una vista
+            spaceBetween: 50, // Espacio entre las tarjetas
+            autoplay: {
+                delay: 3000, // Intervalo (3 segundos)
+            },
+        });
+
+        var swiper1 = new Swiper('.slider1', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
     
 </body>
 </html>

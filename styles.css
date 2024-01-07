@@ -1,37 +1,68 @@
 :root{
-    --rosa: rgb(253, 146, 242);
-    --border-color: linear
+    --rosa: rgb(255, 189, 248);
+    --border-color: linear;
+    --color2: rgb(141, 109, 91);
+    --blanco: white;
 }
 *{
     text-align: center;
-    justify-content: center;
     align-items: center;
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    padding: 0;
 }
-body{
-    display: flex;
+html{
+    background-color: var(--rosa);
+}
+.main{
+    background-color: var(--rosa);
+}
+.slider_int{
+}
+.slider_int img{
+    height: 300px;
+}
+.slider{
+    overflow: hidden;
 }
 header{
     width: 100%;
+    margin: 0;
 }
-.titulo{
-    font-style: italic;
+.navegador button{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.div_titulo{
     color: var(--rosa);
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
 }
 .navegador{
     font-style: none;
 }
 .navegador ul{
     list-style: none;
-    background: linear-gradient( to top, var(--rosa) 0%, white 100%) ;
+    background: linear-gradient( to top, var(--rosa) 0%, var(--blanco) 100%) ;
     padding: 0;
     display: flex;
     height: 50px;
+    margin: 0;
 }
 .navegador ul li{
     width: 25%;
+    height: 100%;
 }
-.navegador ul li a{
+.navegador ul li a button{
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: var(--color2);
 }
