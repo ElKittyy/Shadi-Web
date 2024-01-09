@@ -14,16 +14,43 @@
 html{
     background-color: var(--rosa);
 }
+body{
+    background-color: var(--rosa);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .main{
     background-color: var(--rosa);
+    align-items: center;
 }
-.slider_int{
-}
-.slider_int img{
-    height: 300px;
+.main div{
+    width: 100%;
 }
 .slider{
-    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider_images img{
+    width: 90%;
+}
+.slider_images{
+}
+.flecha-slider-izquierda img, .flecha-slider-derecha img{
+    height: 5cap;
+    color: var(--color2);
+}
+.flecha-slider-izquierda img:hover, .flecha-slider-derecha img:hover{
+    transition: 0.5s;
+    height: 5.5cap;
+    cursor: pointer;
+}
+.flecha-slider-derecha{
+    text-align: left;
+}
+.flecha-slider-izquierda{
+    text-align: right;
 }
 header{
     width: 100%;
@@ -38,13 +65,13 @@ header{
     background-color: transparent;
     border: none;
 }
-
 .div_titulo{
     color: var(--rosa);
     height: 70px;
     margin: 0;
     padding: 0;
     font-size: 50px;
+    background-color: white;
 }
 .navegador{
     font-style: none;
@@ -65,4 +92,45 @@ header{
     text-decoration: none;
     font-size: 20px;
     color: var(--color2);
+}
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    background: linear-gradient( to top, var(--blanco) 0%, var(--rosa) 100%) ;
+}
+.info{
+    text-align: center;
+    width: 33.3%;
+}
+.links{
+    text-align: center;
+    width: 33.3%;
+}
+.links a{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.icons{
+    text-align: center;
+    width: 33.3%;
+}
+.icons a{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.fa-facebook{
+    color: rgb(0, 0, 187);
+}
+.fa-whatsapp{
+    color:rgb(0, 180, 0);
+}
+.fa-instagram{
+    color: black;
 }
