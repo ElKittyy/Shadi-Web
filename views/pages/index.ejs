@@ -1,0 +1,59 @@
+<html lang="es">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    
+    <div class="form-group">
+        <label class="">Tipo</label>
+        <select name="tipo" id="tipo" class="form-control">
+            <option value="Todos">Todos</option>
+                <option value="pantalon">Pantalones</option>
+                <option value="remeras">Remeras</option>
+                <option value="abrigo">Abrigos</option>
+        </select>
+    </div>
+
+    <div class="productos_prin">
+        <div class="target">
+            <div class="card">
+                <img src="img/img 2.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Camisa Rosa</h5>
+                    <p class="card-text">$200</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="target">
+            <div class="card">
+                <img src="img/img 1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Blazer Negro</h5>
+                    <p class="card-text">$200</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="target">
+            <div class="card">
+                <img src="img/img 3.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Pantalon Blanco</h5>
+                    <p class="card-text">$200</p>
+                    <button href="#" class="btn btn-secondary">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

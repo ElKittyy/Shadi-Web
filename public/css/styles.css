@@ -1,0 +1,259 @@
+/* GENERAL */
+
+:root{
+    --rosa: #dba8cc;
+    --color1: #d19adb;
+    --color2: black;
+    --color3: #db9aa0;
+    --color4: #db9ac7;
+    --color5: #bb9adb;
+    --color6: #dba39a;
+    --blanco: white;
+    --border-color: linear;
+}
+*{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: var(--rosa);
+}
+
+/* BODY */
+
+body{
+    background-color: var(--rosa);
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    display: flex;
+}
+.target{
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+.productos_prin{
+    margin: 0;
+    padding: 0;
+}
+.cartel_login{
+    display: grid;
+    background-color: var(--color3);
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+.boton{
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    background-color: var(--color5);
+    transition: all 0.5s;
+    height: 30px;
+}
+.boton:hover{
+    background-color: var(--color4);
+}
+.boton_secondary{
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    background-color: var(--color1);
+    transition: all 0.5s;
+    height: 30px;
+}
+.boton_secondary:hover{
+    background-color: var(--color3);
+}
+.input_login{
+    height: 30px;
+}
+.form_contacto{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: var(--color3);
+    border-radius: 30px;
+    padding: 10px;
+}
+.form_contacto input{
+    margin: 10px;
+}
+.form_contacto textarea{
+    margin: 10px;
+    width: 93.5%;
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+.btn_contacto{
+    width: 300px;
+    grid-area: 3 / 1 / span 1 / span 3;
+}
+.regis_login{
+    margin: 10px;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    margin: 0;
+}
+.navegador button{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+}
+.navegador button:hover{
+    font-size: 25px;
+}
+.div_titulo{
+    color: var(--rosa);
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.div_titulo h1{
+    font-size: 60px;
+}
+.navegador{
+    font-style: none;
+}
+.navegador ul{
+    list-style: none;
+    background: linear-gradient( to top, var(--rosa) 0%, var(--blanco) 100%) ;
+    padding: 0;
+    display: flex;
+    height: 50px;
+    margin: 0;
+}
+.navegador ul li{
+    width: 25%;
+    height: 100%;
+}
+.navegador button{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color2);
+}
+.i_usuario{
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--color2);
+    height: 100%;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+.i_usuario:hover{
+    font-size: 25px;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    background: linear-gradient( to top, var(--blanco) 0%, var(--rosa) 100%) ;
+}
+.info{
+    width: 33.3%;
+}
+.links{
+    width: 33.3%;
+}
+.links a{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.icons{
+    width: 33.3%;
+}
+.icons a{
+    display: inline-block;
+    font-size: 30px;
+    margin: 5px;
+}
+.fa-facebook{
+    color: rgb(0, 0, 187);
+}
+.fa-whatsapp{
+    color:rgb(0, 180, 0);
+}
+.fa-instagram{
+    color: black;
+}
+
+/* ADMINISTRADOR */
+
+.admin_productos{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    background-color: var(--color6);
+    width: 95%;
+    height: min-content;
+    padding: 25px;
+    border-radius: 40px;
+}
+.admin_prod_item{
+    display: flex;
+}
+.item_admin{
+    align-content: center;
+    margin: 5px 0 ;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+    }
+    footer div{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .target, .info, .links, .icons{
+        width: 75%;
+    }
+    .productos_princ{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .div_titulo h1{
+        font-size: 40px;
+    }
+    .div_titulo{
+        align-content: center;
+    }
+    .navegador button{
+        font-size: 16px;
+    }
+}
