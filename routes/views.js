@@ -31,8 +31,4 @@ router.get('/register', function(req, res){
 router.get('/adminprod', function(req, res){
     res.render('pages/adminprod');
 })
-router.get('/adminusr', function(req, res){
-    res.render('pages/adminusr');
-})
-
 export default router;
